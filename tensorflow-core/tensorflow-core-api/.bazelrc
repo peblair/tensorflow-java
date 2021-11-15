@@ -616,3 +616,8 @@ build:release_gpu_linux_cuda_10_1 --config=release_gpu_linux
 build:release_gpu_linux_cuda_10_1 --action_env CUDA_TOOLKIT_PATH="/usr/local/cuda-10.1"
 build:release_gpu_linux_cuda_10_1 --action_env=TF_CUDA_VERSION="10"
 build:release_gpu_linux_cuda_10_1 --action_env=TF_CUDNN_VERSION="7"
+# MACOS ARM64
+build:macos_arm64 --host_cpu=darwin_arm64
+build:macos --incompatible_restrict_string_escapes=false
+build:opt --copt=-Wno-sign-compare
+build:opt --host_copt=-Wno-sign-compare
